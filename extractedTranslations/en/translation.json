@@ -1,5 +1,12 @@
 {
   "AboutPage": "AboutPage",
+  "Error, reload the page": "Error, reload the page",
   "MainPage": "MainPage",
+  "Page Not Found": "Page Not Found",
+  "Page could not be found": {
+    "": ""
+  },
+  "Reload page": "Reload page",
+  "throw error": "throw error",
   "Язык": "Язык"
 }
