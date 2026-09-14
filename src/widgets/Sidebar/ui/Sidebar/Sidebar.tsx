@@ -14,8 +14,12 @@ const Sidebar = ({ className }: SidebarProps) => {
     const onToggleCollapse = () => setCollapsed((prev) => !prev);
 
     return (
-        <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
-            <Button onClick={onToggleCollapse}>TOOGLE</Button>
+        <div
+            data-testid="sidebar"
+            className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
+            <Button
+                data-testid="sidebar-toggle"
+                onClick={onToggleCollapse}>TOOGLE</Button>
             <div className={cls.switchers}>
                 <ThemeSwitcher />
                 <LangSwitcher className={cls.lng} />
